@@ -36,10 +36,7 @@ Ensure you are running **Arch Linux** (or similar) with the following installed:
 ```bash
 quickshell --path /path/to/your/shell.qml
 
-Put in Autostart in hyprland.conf
-# Start StickyNotes
-exec-once = quickshell -p /home/ppk/.config/quickshell/StickyNotes/shell.qml
-
 Hyprland bind key entry
-bind = SUPER, N, exec, qs -p ~/.config/quickshell/StickyNotes/shell.qml ipc call note toggle
+Calls the script that toggles it in and out on screen
+bind = SUPER, N, exec, ~/.config/quickshell/StickyNotes/notes.sh
 
